@@ -5,3 +5,10 @@ Display Start App
 STORE "username"
 STORE "password"
 STORE "login" AS BOOLEAN with TRUE 
+
+IF login = true 
+    Go to Page Menu
+    display main App
+ELSE
+    Go to page login
+
