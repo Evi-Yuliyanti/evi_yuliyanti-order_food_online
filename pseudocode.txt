@@ -1,0 +1,53 @@
+Program Order_makanan_online
+
+Display Start App 
+
+STORE "username"
+STORE "password"
+STORE "login" AS BOOLEAN with TRUE 
+
+IF login = true 
+    Go to Page Menu
+    display main App
+ELSE
+    Go to page login
+
+FUNCTION login ()
+    while login = false 
+    READ AND WRITE username with string
+    READ AND WRITE password with string
+    if success 
+        Go to main Menu
+END FUNCTION 
+
+STORE "payment" AS BOOLEAN with TRUE 
+STORE "total_payment" AS NUMBER with 0
+
+WHILE payment 
+
+Display order list 
+
+READ AND WRITE "harga" with number 
+READ AND WRITE "jumlah" with number
+READ AND WRITE "total_payment" with number
+
+STORE "total_payment" with calculate "harga" * "jumlah"
+PRINT "total_payment"
+
+READ AND WRITE "Address" with string
+
+IF "pembayaran_cash" = true
+	Go to checkout
+
+ELSE IF "Pembayaran_gopay" = true
+	Go to Input pin
+	STORE "pin" with number
+Else 
+	Go to Return payment
+
+END WHILE
+
+Display Completed payment 
+
+
+
