@@ -12,3 +12,13 @@ IF login = true
 ELSE
     Go to page login
 
+FUNCTION login ()
+    while login = false 
+    READ AND WRITE username with string
+    READ AND WRITE password with string
+    if success 
+        Go to main Menu
+END FUNCTION 
+
+
+
