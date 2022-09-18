@@ -1,3 +1,7 @@
 Program Order_makanan_online
 
 Display Start App 
+
+STORE "username"
+STORE "password"
+STORE "login" AS BOOLEAN with TRUE 
