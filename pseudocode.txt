@@ -47,5 +47,7 @@ Else
 
 END WHILE
 
+Display Completed payment 
+
 
 
